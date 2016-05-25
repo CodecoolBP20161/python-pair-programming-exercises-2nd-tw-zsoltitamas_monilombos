@@ -2,10 +2,14 @@ import datetime
 
 
 def years(age):
-    return
+    actual_years = datetime.datetime.now()
+    return actual_years.year + 100 - age
 
 
 def main():
+    name = input("Enter your name:")
+    user_age = int(input("Enter your age:"))
+    print(years(user_age))
     return
 
 
